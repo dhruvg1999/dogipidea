@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Dogipidea</title>
+ 
+   <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+<body>
+   <div id="root"> I am not rendering. </div>
+ 
+   <script>
+       const App = () => {
+           return React.createElement(
+               "div",  // tag
+               {id:'website-title'},   // attributes with the element
+               React.createElement(
+                   "h3",
+                   {},
+                   "Dog Website"
+               ), // content can be another component also.
+           );
+       };
+ 
+       ReactDOM.render(
+           React.createElement(  // component to render
+               App
+               ),
+           document.getElementById('root') // place to render
+           );
+ 
+ 
+   </script>
+ 
+  
+ 
+</body>
+</html>
