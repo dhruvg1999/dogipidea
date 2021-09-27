@@ -1,19 +1,19 @@
 {
+  "homepage": "http://SidharathBansal.github.io/Dogipidea",
   "name": "dogipidea",
   "version": "1.0.0",
   "description": "",
-  "main": "App.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dhruvg1999/dogipidea.git"
+    "format": "prettier --write \" src/**/*.{js,jsx} \" ",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dhruvg1999/dogipidea/issues"
-  },
-  "homepage": "https://github.com/dhruvg1999/dogipidea#readme"
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.4.1"
+  }
 }
